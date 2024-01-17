@@ -1,3 +1,11 @@
+# DeDuplicates
+
+DeDuplicates is a web app that allows you to remove duplicate files from your computer.
+
+1. Paste or type in text and remove duplicate lines
+2. Upload a file and remove duplicate lines (Small files)
+3. When the file size is larger user should have option to upload it to a different server and process it in the backend.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
