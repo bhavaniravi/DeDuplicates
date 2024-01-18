@@ -1,7 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import { useState } from "react";
+import Image from "next/image";
+import file_download_icon from "./images/file_download_black_24dp.svg";
+import file_upload_icon from "./images/file_upload_black_24dp.svg";
 
 export default function Home() {
   const [textAreaValue, setTextAreaValue] = useState("");
@@ -57,7 +59,7 @@ export default function Home() {
                   element?.click();
                 }}
               >
-                Upload File
+                <Image priority src={file_upload_icon} alt="Upload File" />
               </button>
               <button
                 className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
@@ -72,7 +74,7 @@ export default function Home() {
                   element.click();
                 }}
               >
-                Download File
+                <Image priority src={file_download_icon} alt="Download File" />
               </button>
             </div>
             <div className="RightButtons col-end-12">
